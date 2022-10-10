@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body{
+    background: #e7a2ad;
+}
+.time{
+    width: auto;
+    height: 100px;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 999;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+}
+.envelope{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 840px;
+    height: 480px;
+    background: rgb(252, 252, 198);
+    box-shadow: 6px 6px 30px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.envelope-after{
+    display: block;
+    position: absolute;
+    border-width: 240px 420px;
+    top: 50%;
+    left: 50%;
+    transform: rotateX(0deg);
+    transform: translate(-50%,-50%);
+    border-style: solid;
+    border-color: transparent rgb(252, 240, 175) rgb(252, 240, 175) rgb(252, 240, 175);
+    transition: .3s all;
+    transform-origin: 50% 0%;
+    z-index: 4;
+    border-radius: 5px;
+}
+.envelope-before{
+    display: block;
+    position: absolute;
+    border-width: 240px 420px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3) transparent transparent transparent;
+    transform-origin: 50% 0%;
+    z-index: 6;
+    filter: blur(2px);
+    border-radius: 5px;
+    transition: 3s;
+}
+.envelope .top{
+    position: absolute;
+    border-width: 240px 420px;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-color: rgb(252, 240, 175) transparent transparent transparent;
+    transform: rotateX(0deg);
+    transform-origin: 50% 0%;
+    z-index: 7;
+    border-radius: 5px;
+}
+
+.card {
+    width: 720px;
+    height: 540px;
+    background-color: white;
+    position: absolute;
+    z-index: 7;
+    left: 50%;
+    margin-left: -360px;
+    bottom: 20px;
+    /*transition: .2s .1s all;*/
+    box-shadow: 1px 1px 15px rgba(0,0,0,.2);
+    opacity: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5% 6.8%;
+    filter: contrast(20);
+
+    transition: .8s 1.5s ease-out;
+}
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: "仓耳渔阳体 W04";
+    font-weight: 400;
+    src: url("font/TsangerYuYangT_W04_W04.ttf");
+    font-display: swap;
+}
+
+.card p{
+    font-size: 28px;
+    color: #707070;
+    font-family: "仓耳渔阳体 W04";
+    font-display: swap;
+    font-weight: 600;
+    line-height:32px;
+}
+
+
+/*----------------------------------------------------------*/

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="time"></div>
+    <div class="envelope">
+        <div class="envelope-after"></div>
+        <div class="envelope-before"></div>
+        <div class="top"></div>
+        <div class="card"><p class="content"></p></div>
+<!--        花开花谢,此消彼长,云卷云舒,又是一年。愿时间更替带给你美丽心情,生日快乐!-->
+        <canvas ref="canvas" class="fireworksDisplay"></canvas>
+    </div>
+    <audio src="happyBirthday.mp3" controls="controls" preload id="music" hidden loop></audio>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/LunarNewCalendarConversion.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/getLunarCalendarTime.js"></script>
+    <script src="js/calculationDate.js"></script>
+</body>
+</html>
